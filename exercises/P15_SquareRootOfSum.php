@@ -5,8 +5,17 @@ class P15_SquareRootOfSum {
         // Define two numbers
         $numberA = 70;
         $numberB = 11;
+        
+        $sum = $numberA + $numberB;
 
-        // Calculate and output the square root of their sum
-        // Write the program here
+        // Calculate the square root of the sum
+        $squareRoot = sqrt($sum);
+
+        // Output the result
+        echo $squareRoot . "\n";
     }
 }
+
+// To run the code (outside the class definition):
+$program = new P15_SquareRootOfSum();
+$program->main();

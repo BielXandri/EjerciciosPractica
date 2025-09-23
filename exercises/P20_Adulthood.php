@@ -4,12 +4,21 @@ class P20_Adulthood
 {
     public function main(): void
     {
-        // Write your code here
         // Prompt the user for input
-       
-        // Get input from the user
+        echo "How old are you? ";
 
-        // Check year value
+        // Use the global STDIN stream to allow test mocking
+        $input = trim(fgets($GLOBALS['STDIN']));
+
+        // Convert input to integer (invalid inputs become 0)
+        $age = (int) $input;
+
+        // Check age value
+        if ($age >= 18) {
+            echo "You are an adult.\n";
+        } else {
+            echo "You are not an adult yet.\n";
+        }
        
     }
 }

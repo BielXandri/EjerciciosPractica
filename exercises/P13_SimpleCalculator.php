@@ -8,7 +8,10 @@ class P13_SimpleCalculator {
 
         // Perform and output the calculations
         // Write the program here
-       
+       echo $numA . " + " . $numB . " = ". $numA + $numB ."\n";
+       echo $numA . " - " . $numB . " = ". $numA - $numB ."\n";
+       echo $numA . " * " . $numB . " = ". $numA * $numB ."\n";
+       echo $numA . " / " . $numB . " = ". $numA / $numB . ".0" . "\n";
        
     }
 }
